@@ -1,18 +1,18 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const HostSchema = new mongoose.Schema({
   healthCheckUrl: {
     type: String,
     required: true,
-    unique: true
+    unique: true,
   },
   group: {
     type: String,
-    required: false
-  }
+    required: false,
+  },
 
 }, {
-  versionKey: false
+  versionKey: false,
 });
 
-module.exports = mongoose.model('Host', HostSchema);
+module.exports = mongoose.model("Host", HostSchema);
