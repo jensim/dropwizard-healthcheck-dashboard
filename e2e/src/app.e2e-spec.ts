@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to testinggrounds-mean-own!');
+    expect(page.getTitleText()).toEqual('Welcome to dropwizard-healthcheck-dashboard!');
   });
 
   afterEach(async () => {

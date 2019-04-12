@@ -1,5 +1,5 @@
 {
-  "name": "testinggrounds-mean-own",
+  "name": "dropwizard-healthcheck-dashboard",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

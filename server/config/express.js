@@ -21,7 +21,7 @@ if (config.env === 'development') {
 }
 
 // Choose what fronten framework to serve the dist from
-var distDir = '../../dist/dropwizard-dashboard/';
+var distDir = '../../dist/dropwizard-healthcheck-dashboard/';
 
 //
 app.use(express.static(path.join(__dirname, distDir)));
