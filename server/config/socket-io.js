@@ -14,10 +14,10 @@ module.exports = function configure(server, app) {
     socket.on("chat message", function(data) {
       io.emit("chat message", data);
     });
-    socket.on("refresh hosts", () => {
+    socket.on("hosts", () => {
       (async () => {
         for await (const host of Host.find()) {
-          socket.emit("refresh hosts", host);
+          socket.emit("hosts", host);
         }
       })();
     });
