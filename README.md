@@ -11,7 +11,18 @@
 - Socket.IO
 
 ----
-## Goals
+## Goals / To-do:s
+
+### Planning
+- [x] Start creating wiremocks:
+[Done =)](https://wireframepro.mockflow.com)
+- [x] Create /docs for GH pages
+- [ ] Plan app flow
+
+### Infra
+- [ ] Run e2e tests on travis
+- [ ] AutoDeploy to Heroku on successful build
+ 
 ### Front-end
 - [ ] FE: (user) configurable dashboards showing selected service healthchecks
 - [ ] FE: (user) add new services by suggesting a http endpoint 
