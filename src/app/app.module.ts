@@ -7,7 +7,6 @@ import {DashboardListComponent} from './dashboard/dashboard-list/dashboard-list.
 import {HostConfComponent} from './dashboard/host-conf/host-conf.component';
 import {HostComponent} from './hosts/host/host.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,6 @@ import { HomeComponent } from './home/home.component';
     HostConfComponent,
     HostComponent,
     PageNotFoundComponent,
-    HomeComponent,
   ],
   imports: [
     BrowserModule,
