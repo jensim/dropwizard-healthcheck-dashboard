@@ -9,5 +9,6 @@ router.get("/health-check", (req, res) =>
 router.use("/auth", require("./auth.route"));
 router.use("/user", require("./user.route"));
 router.use("/host", require("./host.route"));
+router.use("/dashboard", require("./dashboard.route"));
 
 module.exports = router;
