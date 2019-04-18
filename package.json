@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "serve": "node server",
-    "start": "concurrently -c \"yellow.bold,green.bold\" -n \"SERVER,BUILD\" \"nodemon server\" \"ng build --watch\"",
+    "start": "node server",
+    "serve": "concurrently -c \"yellow.bold,green.bold\" -n \"SERVER,BUILD\" \"nodemon server --config server-nodemon.json\" \"ng build --watch\"",
     "build": "ng build --prod",
     "test": "npm run test:unit && npm run test:e2e",
     "test:unit": "ng test --code-coverage --watch=false --browsers ChromeHeadless",
