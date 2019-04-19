@@ -14,9 +14,7 @@ router.route("/").get(asyncHandler(async (req, res) => {
 }));
 
 router.route("/").post(asyncHandler(async (req, res) => {
-  console.log(`Saving a new host ${JSON.stringify(req.body, null, "\t")}`);
-  let saved = await hostController.insert(req.body);
-  res.send(saved);
+  res.send(await hostController.insert(req.body));
 }));
 
 return router;

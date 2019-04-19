@@ -13,11 +13,13 @@ router.route("/").get(asyncHandler(async (req, res) => {
   res.end();
 }));
 
-
 router.route("/").post(asyncHandler(async (req, res) => {
-  console.log(`Saving a new dashboard ${JSON.stringify(req.body, null, "\t")}`);
-  let saved = await dashboardController.insert(req.body);
-  res.send(saved);
+  res.send(await dashboardController.insert(req.body));
+}));
+
+router.route("/url").post(asyncHandler(async (req, res) => {
+
+  await dashboardController.addUrl(req.body.dashboardId, req.body.url);
 }));
 
 return router;

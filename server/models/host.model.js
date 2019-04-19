@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const url = require("url");
 
 const HostSchema = new mongoose.Schema({
   healthCheckUrl: {
@@ -10,7 +9,6 @@ const HostSchema = new mongoose.Schema({
   hostName: {
     type: String,
     required: true,
-    default: () => url.parse(this.healthCheckUrl).hostname,
   },
   group: {
     type: String,
